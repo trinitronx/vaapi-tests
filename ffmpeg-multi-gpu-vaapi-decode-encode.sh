@@ -36,7 +36,7 @@ ffmpeg -report -nostdin ${DEBUG} \
     \
     -i "$input_video_file" \
     -i "$input_audio_file" \
-  -filter_hw_device amd0 \
+  -filter_hw_device ${vf_dev_name} \
   -vf 'format=nv12|vaapi,hwupload' \
     -c:v av1_vaapi -global_quality 25 -profile:v:0 main \
     -c:a copy \
