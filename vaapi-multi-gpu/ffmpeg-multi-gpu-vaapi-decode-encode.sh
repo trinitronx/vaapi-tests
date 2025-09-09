@@ -1,7 +1,7 @@
 #!/bin/sh
 SCRIPT_DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
-#export LIBVA_DRIVERS_PATH=/usr/lib/vaapi-multi-gpu/dri/
+#export LIBVA_DRIVERS_PATH=/usr/lib/dri/
 #export LIBVA_DRIVER_NAME=iHD
 hw_dev_name='intel0'
 hw_device='vaapi=intel0:/dev/dri/renderD128'
