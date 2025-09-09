@@ -1,0 +1,129 @@
+[Jun 8 01:33] audit: type=1131 audit(1686187988.161:4398): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=user@966 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  +0.119589] audit: type=1131 audit(1686187988.281:4399): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=user-runtime-dir@966 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[ +16.922658] amdgpu 0000:03:00.0: amdgpu: [mmhub] page fault (src_id:0 ring:40 vmid:5 pasid:32771, for process ffmpeg pid 115832 thread ffmpeg:cs0 pid 115833)
+[  +0.000018] amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000800101b30000 from client 0x12 (VMC)
+[  +0.000009] amdgpu 0000:03:00.0: amdgpu: MMVM_L2_PROTECTION_FAULT_STATUS:0x00541651
+[  +0.000006] amdgpu 0000:03:00.0: amdgpu: 	 Faulty UTCL2 client ID: VCN0 (0xb)
+[  +0.000005] amdgpu 0000:03:00.0: amdgpu: 	 MORE_FAULTS: 0x1
+[  +0.000004] amdgpu 0000:03:00.0: amdgpu: 	 WALKER_ERROR: 0x0
+[  +0.000004] amdgpu 0000:03:00.0: amdgpu: 	 PERMISSION_FAULTS: 0x5
+[  +0.000004] amdgpu 0000:03:00.0: amdgpu: 	 MAPPING_ERROR: 0x0
+[  +0.000004] amdgpu 0000:03:00.0: amdgpu: 	 RW: 0x1
+[  +0.000007] amdgpu 0000:03:00.0: amdgpu: [mmhub] page fault (src_id:0 ring:40 vmid:5 pasid:32771, for process ffmpeg pid 115832 thread ffmpeg:cs0 pid 115833)
+[  +0.000010] amdgpu 0000:03:00.0: amdgpu:   in page starting at address 0x0000800101b31000 from client 0x12 (VMC)
+[  +0.000006] amdgpu 0000:03:00.0: amdgpu: MMVM_L2_PROTECTION_FAULT_STATUS:0x00000000
+[  +0.000005] amdgpu 0000:03:00.0: amdgpu: 	 Faulty UTCL2 client ID: unknown (0x0)
+[  +0.000005] amdgpu 0000:03:00.0: amdgpu: 	 MORE_FAULTS: 0x0
+[  +0.000004] amdgpu 0000:03:00.0: amdgpu: 	 WALKER_ERROR: 0x0
+[  +0.000003] amdgpu 0000:03:00.0: amdgpu: 	 PERMISSION_FAULTS: 0x0
+[  +0.000004] amdgpu 0000:03:00.0: amdgpu: 	 MAPPING_ERROR: 0x0
+[  +0.000004] amdgpu 0000:03:00.0: amdgpu: 	 RW: 0x0
+[  +4.793802] audit: type=1131 audit(1686188009.998:4400): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=blueman-mechanism comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  +5.409654] [drm:amdgpu_job_timedout [amdgpu]] *ERROR* ring vcn_enc_0.0 timeout, signaled seq=678986, emitted seq=678988
+[  +0.000892] [drm:amdgpu_job_timedout [amdgpu]] *ERROR* Process information: process ffmpeg pid 115832 thread ffmpeg:cs0 pid 115833
+[  +0.000863] amdgpu 0000:03:00.0: amdgpu: GPU reset begin!
+[  +0.231951] [drm] Register(0) [mmUVD_POWER_STATUS] failed to reach value 0x00000001 != 0x00000002
+[  +0.166466] [drm] Register(0) [mmUVD_RB_RPTR] failed to reach value 0x00000300 != 0x000002c0
+[  +0.163840] [drm] Register(0) [mmUVD_RBC_RB_RPTR] failed to reach value 0x000001d0 != 0x000003b0
+[  +0.164555] [drm] Register(0) [mmUVD_POWER_STATUS] failed to reach value 0x00000001 != 0x00000002
+[  +0.037278] amdgpu 0000:03:00.0: amdgpu: free PSP TMR buffer
+[  +0.044076] amdgpu 0000:03:00.0: amdgpu: MODE1 reset
+[  +0.000002] amdgpu 0000:03:00.0: amdgpu: GPU mode1 reset
+[  +0.000045] amdgpu 0000:03:00.0: amdgpu: GPU smu mode1 reset
+[  +0.523480] amdgpu 0000:03:00.0: amdgpu: GPU reset succeeded, trying to resume
+[  +0.000230] [drm] PCIE GART of 512M enabled (table at 0x0000008000300000).
+[  +0.000040] [drm] VRAM is lost due to GPU reset!
+[  +0.000003] [drm] PSP is resuming...
+[  +0.093504] [drm] reserve 0xa00000 from 0x8001000000 for PSP TMR
+[  +0.120046] amdgpu 0000:03:00.0: amdgpu: RAS: optional ras ta ucode is not available
+[  +0.021558] amdgpu 0000:03:00.0: amdgpu: SECUREDISPLAY: securedisplay ta ucode is not available
+[  +0.000007] amdgpu 0000:03:00.0: amdgpu: SMU is resuming...
+[  +0.000007] amdgpu 0000:03:00.0: amdgpu: smu driver if version = 0x0000000f, smu fw if version = 0x00000013, smu fw program = 0, version = 0x003b2a00 (59.42.0)
+[  +0.000012] amdgpu 0000:03:00.0: amdgpu: SMU driver if version not matched
+[  +0.000042] amdgpu 0000:03:00.0: amdgpu: use vbios provided pptable
+[  +0.052665] amdgpu 0000:03:00.0: amdgpu: SMU is resumed successfully!
+[  +0.001160] [drm] DMUB hardware initialized: version=0x02020017
+[  +0.126900] [drm] kiq ring mec 2 pipe 1 q 0
+[  +0.004010] [drm] VCN decode and encode initialized successfully(under DPG Mode).
+[  +0.000357] [drm] JPEG decode initialized successfully.
+[  +0.000042] amdgpu 0000:03:00.0: amdgpu: ring gfx_0.0.0 uses VM inv eng 0 on hub 0
+[  +0.000002] amdgpu 0000:03:00.0: amdgpu: ring comp_1.0.0 uses VM inv eng 1 on hub 0
+[  +0.000002] amdgpu 0000:03:00.0: amdgpu: ring comp_1.1.0 uses VM inv eng 4 on hub 0
+[  +0.000001] amdgpu 0000:03:00.0: amdgpu: ring comp_1.2.0 uses VM inv eng 5 on hub 0
+[  +0.000001] amdgpu 0000:03:00.0: amdgpu: ring comp_1.3.0 uses VM inv eng 6 on hub 0
+[  +0.000001] amdgpu 0000:03:00.0: amdgpu: ring comp_1.0.1 uses VM inv eng 7 on hub 0
+[  +0.000001] amdgpu 0000:03:00.0: amdgpu: ring comp_1.1.1 uses VM inv eng 8 on hub 0
+[  +0.000002] amdgpu 0000:03:00.0: amdgpu: ring comp_1.2.1 uses VM inv eng 9 on hub 0
+[  +0.000001] amdgpu 0000:03:00.0: amdgpu: ring comp_1.3.1 uses VM inv eng 10 on hub 0
+[  +0.000001] amdgpu 0000:03:00.0: amdgpu: ring kiq_2.1.0 uses VM inv eng 11 on hub 0
+[  +0.000001] amdgpu 0000:03:00.0: amdgpu: ring sdma0 uses VM inv eng 12 on hub 0
+[  +0.000001] amdgpu 0000:03:00.0: amdgpu: ring sdma1 uses VM inv eng 13 on hub 0
+[  +0.000001] amdgpu 0000:03:00.0: amdgpu: ring vcn_dec_0 uses VM inv eng 0 on hub 1
+[  +0.000001] amdgpu 0000:03:00.0: amdgpu: ring vcn_enc_0.0 uses VM inv eng 1 on hub 1
+[  +0.000002] amdgpu 0000:03:00.0: amdgpu: ring vcn_enc_0.1 uses VM inv eng 4 on hub 1
+[  +0.000001] amdgpu 0000:03:00.0: amdgpu: ring jpeg_dec uses VM inv eng 5 on hub 1
+[  +0.003935] amdgpu 0000:03:00.0: amdgpu: recover vram bo from shadow start
+[  +0.000013] amdgpu 0000:03:00.0: amdgpu: recover vram bo from shadow done
+[  +0.000021] [drm] Skip scheduling IBs!
+[  +0.000003] [drm] Skip scheduling IBs!
+[  +0.000009] amdgpu 0000:03:00.0: amdgpu: GPU reset(14) succeeded!
+[  +0.000009] [drm] Skip scheduling IBs!
+[  +0.000004] [drm] Skip scheduling IBs!
+[  +0.000003] [drm] Skip scheduling IBs!
+[  +0.000001] [drm] Skip scheduling IBs!
+[  +0.000006] [drm] Skip scheduling IBs!
+[  +0.000005] [drm] Skip scheduling IBs!
+[  +0.000001] [drm] Skip scheduling IBs!
+[  +0.000001] [drm] Skip scheduling IBs!
+[  +0.000001] [drm] Skip scheduling IBs!
+[  +0.000001] [drm] Skip scheduling IBs!
+[  +0.000002] [drm] Skip scheduling IBs!
+[  +0.000003] [drm] Skip scheduling IBs!
+[  +0.000001] [drm] Skip scheduling IBs!
+[  +0.000000] [drm] Skip scheduling IBs!
+[  +0.000003] [drm] Skip scheduling IBs!
+[  +0.000003] [drm] Skip scheduling IBs!
+[  +0.000001] [drm] Skip scheduling IBs!
+[  +0.000003] [drm] Skip scheduling IBs!
+[  +0.000004] [drm] Skip scheduling IBs!
+[  +0.000002] [drm] Skip scheduling IBs!
+[  +0.000002] [drm] Skip scheduling IBs!
+[  +0.000004] [drm] Skip scheduling IBs!
+[  +0.000001] [drm] Skip scheduling IBs!
+[  +0.000003] [drm] Skip scheduling IBs!
+[  +0.000002] [drm] Skip scheduling IBs!
+[  +0.000000] [drm] Skip scheduling IBs!
+[  +0.000003] [drm] Skip scheduling IBs!
+[  +0.000142] [drm:amdgpu_cs_ioctl [amdgpu]] *ERROR* Failed to initialize parser -125!
+
+### Here is where Cinnamon / LightDM desktop crashes & restarts
+[  +0.035953] audit: type=1113 audit(1686188017.201:4401): pid=115346 uid=0 auid=1000 ses=29 subj=unconfined msg='op=logout id=1000 exe="/usr/bin/lightdm" hostname=manjaro-cinnamon addr=? terminal=/dev/tty7 res=success'
+[  +0.001370] audit: type=1106 audit(1686188017.201:4402): pid=115346 uid=0 auid=1000 ses=29 subj=unconfined msg='op=PAM:session_close grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_mail,pam_systemd,pam_env,pam_gnome_keyring acct="manjaro" exe="/usr/bin/lightdm" hostname=? addr=? terminal=:0 res=success'
+[  +0.000092] audit: type=1104 audit(1686188017.201:4403): pid=115346 uid=0 auid=1000 ses=29 subj=unconfined msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_faillock,pam_gnome_keyring acct="manjaro" exe="/usr/bin/lightdm" hostname=? addr=? terminal=:0 res=success'
+[  +0.603389] snd_hda_codec_hdmi hdaudioC1D0: HDMI: audio coding type 0 not expected
+[  +0.014880] snd_hda_codec_hdmi hdaudioC1D0: HDMI: audio coding type 0 not expected
+[  +0.987734] audit: type=1103 audit(1686188018.808:4404): pid=115950 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_env,pam_permit acct="lightdm" exe="/usr/bin/lightdm" hostname=? addr=? terminal=:0 res=success'
+[  +0.085527] audit: type=1130 audit(1686188018.894:4405): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=user-runtime-dir@966 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  +0.014084] audit: type=1101 audit(1686188018.908:4406): pid=115955 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="lightdm" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  +0.000012] audit: type=1103 audit(1686188018.908:4407): pid=115955 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=? acct="lightdm" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=failed'
+[  +0.000068] audit: type=1006 audit(1686188018.908:4408): pid=115955 uid=0 subj=unconfined old-auid=4294967295 auid=966 tty=(none) old-ses=4294967295 ses=30 res=1
+[  +0.000003] audit: type=1300 audit(1686188018.908:4408): arch=c000003e syscall=1 success=yes exit=3 a0=9 a1=7fffbacce830 a2=3 a3=0 items=0 ppid=1 pid=115955 auid=966 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=30 comm="(systemd)" exe="/usr/lib/systemd/systemd" subj=unconfined key=(null)
+[  +3.684490] kauditd_printk_skb: 4 callbacks suppressed
+[  +0.000002] audit: type=1100 audit(1686188022.591:4412): pid=116016 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:authentication grantors=pam_shells,pam_faillock,pam_permit,pam_faillock,pam_gnome_keyring acct="manjaro" exe="/usr/bin/lightdm" hostname=? addr=? terminal=:0 res=success'
+[  +0.000138] audit: type=1101 audit(1686188022.591:4413): pid=116016 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:accounting grantors=pam_access,pam_unix,pam_permit,pam_time acct="manjaro" exe="/usr/bin/lightdm" hostname=? addr=? terminal=:0 res=success'
+[  +0.012721] audit: type=1106 audit(1686188022.604:4414): pid=115950 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:session_close grantors=pam_unix,pam_systemd acct="lightdm" exe="/usr/bin/lightdm" hostname=? addr=? terminal=:0 res=success'
+[  +0.000058] audit: type=1104 audit(1686188022.604:4415): pid=115950 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_env,pam_permit acct="lightdm" exe="/usr/bin/lightdm" hostname=? addr=? terminal=:0 res=success'
+[  +0.021875] audit: type=1103 audit(1686188022.628:4416): pid=116016 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='op=PAM:setcred grantors=pam_shells,pam_faillock,pam_permit,pam_faillock,pam_gnome_keyring acct="manjaro" exe="/usr/bin/lightdm" hostname=? addr=? terminal=:0 res=success'
+[  +0.000055] audit: type=1006 audit(1686188022.628:4417): pid=116016 uid=0 subj=unconfined old-auid=4294967295 auid=1000 tty=(none) old-ses=4294967295 ses=31 res=1
+[  +0.000006] audit: type=1300 audit(1686188022.628:4417): arch=c000003e syscall=1 success=yes exit=4 a0=9 a1=7ffdfd82b0e0 a2=4 a3=0 items=0 ppid=1860 pid=116016 auid=1000 uid=0 gid=0 euid=0 suid=0 fsuid=0 egid=0 sgid=0 fsgid=0 tty=(none) ses=31 comm="lightdm" exe="/usr/bin/lightdm" subj=unconfined key=(null)
+[  +0.000003] audit: type=1327 audit(1686188022.628:4417): proctitle=6C69676874646D002D2D73657373696F6E2D6368696C64003133003230
+[  +0.029433] snd_hda_codec_hdmi hdaudioC1D0: HDMI: audio coding type 0 not expected
+[  +0.020370] audit: type=1105 audit(1686188022.678:4418): pid=116016 uid=0 auid=1000 ses=31 subj=unconfined msg='op=PAM:session_open grantors=pam_loginuid,pam_keyinit,pam_systemd_home,pam_limits,pam_unix,pam_permit,pam_mail,pam_systemd,pam_env,pam_gnome_keyring acct="manjaro" exe="/usr/bin/lightdm" hostname=? addr=? terminal=:0 res=success'
+[  +0.002513] audit: type=1112 audit(1686188022.678:4419): pid=116016 uid=0 auid=1000 ses=31 subj=unconfined msg='op=login id=1000 exe="/usr/bin/lightdm" hostname=manjaro-cinnamon addr=? terminal=/dev/tty7 res=success'
+[  +0.274958] /dev/sdg1: Can't open blockdev
+[  +0.602980] snd_hda_codec_hdmi hdaudioC1D0: HDMI: audio coding type 0 not expected
+[  +9.356939] kauditd_printk_skb: 1 callbacks suppressed
+[  +0.000009] audit: type=1131 audit(1686188032.914:4421): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=user@966 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[  +0.109430] audit: type=1131 audit(1686188033.024:4422): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=user-runtime-dir@966 comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
+[Jun 8 01:34] snd_hda_codec_hdmi hdaudioC1D0: HDMI: audio coding type 0 not expected
+[  +2.323912] audit: type=1131 audit(1686188054.704:4423): pid=1 uid=0 auid=4294967295 ses=4294967295 subj=unconfined msg='unit=blueman-mechanism comm="systemd" exe="/usr/lib/systemd/systemd" hostname=? addr=? terminal=? res=success'
