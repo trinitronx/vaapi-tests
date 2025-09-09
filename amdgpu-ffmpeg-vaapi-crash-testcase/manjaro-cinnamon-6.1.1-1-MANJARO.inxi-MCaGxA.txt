@@ -1,0 +1,84 @@
+Machine:
+  Type: Desktop System: Gigabyte product: Z170X-UD5 v: N/A
+    serial: <superuser required>
+  Mobo: Gigabyte model: Z170X-UD5-CF v: x.x serial: <superuser required>
+    UEFI: American Megatrends v: F23i date: 03/09/2018
+CPU:
+  Info: model: Intel Core i7-7700K bits: 64 type: MT MCP arch: Kaby Lake
+    gen: core 7 level: v3 note: check built: 2018 process: Intel 14nm family: 6
+    model-id: 0x9E (158) stepping: 9 microcode: 0x84
+  Topology: cpus: 1x cores: 4 tpc: 2 threads: 8 smt: enabled cache:
+    L1: 256 KiB desc: d-4x32 KiB; i-4x32 KiB L2: 1024 KiB desc: 4x256 KiB
+    L3: 8 MiB desc: 1x8 MiB
+  Speed (MHz): avg: 2500 high: 4200 min/max: 800/4500 scaling:
+    driver: intel_pstate governor: powersave cores: 1: 4200 2: 800 3: 800 4: 800
+    5: 4200 6: 4200 7: 800 8: 4200 bogomips: 67224
+  Flags: avx avx2 ht lm nx pae sse sse2 sse3 sse4_1 sse4_2 ssse3 vmx
+  Vulnerabilities:
+  Type: itlb_multihit status: KVM: VMX disabled
+  Type: l1tf mitigation: PTE Inversion; VMX: conditional cache flushes, SMT
+    vulnerable
+  Type: mds status: Vulnerable: Clear CPU buffers attempted, no microcode;
+    SMT vulnerable
+  Type: meltdown mitigation: PTI
+  Type: mmio_stale_data status: Vulnerable: Clear CPU buffers attempted, no
+    microcode; SMT vulnerable
+  Type: retbleed mitigation: IBRS
+  Type: spec_store_bypass status: Vulnerable
+  Type: spectre_v1 mitigation: usercopy/swapgs barriers and __user pointer
+    sanitization
+  Type: spectre_v2 mitigation: IBRS, IBPB: conditional, RSB filling,
+    PBRSB-eIBRS: Not affected
+  Type: srbds status: Vulnerable: No microcode
+  Type: tsx_async_abort status: Vulnerable: Clear CPU buffers attempted, no
+    microcode; SMT vulnerable
+Graphics:
+  Device-1: Intel HD Graphics 630 vendor: Gigabyte driver: i915 v: kernel
+    arch: Gen-9.5 process: Intel 14nm built: 2016-20 ports: active: none
+    empty: DP-1, HDMI-A-1, HDMI-A-2, HDMI-A-3 bus-ID: 00:02.0
+    chip-ID: 8086:5912 class-ID: 0380
+  Device-2: AMD Navi 23 [Radeon RX 6600/6600 XT/6600M] vendor: Sapphire
+    driver: amdgpu v: kernel arch: RDNA-2 code: Navi-2x process: TSMC n7 (7nm)
+    built: 2020-22 pcie: gen: 4 speed: 16 GT/s lanes: 16 ports:
+    active: HDMI-A-4 empty: DP-2,DP-3,DP-4 bus-ID: 03:00.0 chip-ID: 1002:73ff
+    class-ID: 0300
+  Device-3: Conexant Systems CX23887/8 PCIe Broadcast Audio and Video
+    Decoder with 3D Comb vendor: Hauppauge works WinTV-quadHD driver: cx23885
+    v: 0.0.4 pcie: gen: 1 speed: 2.5 GT/s lanes: 1 bus-ID: 11:00.0
+    chip-ID: 14f1:8880 class-ID: 0400
+  Device-4: Conexant Systems CX23887/8 PCIe Broadcast Audio and Video
+    Decoder with 3D Comb vendor: Hauppauge works driver: cx23885 v: 0.0.4
+    pcie: gen: 1 speed: 2.5 GT/s lanes: 1 bus-ID: 12:00.0 chip-ID: 14f1:8880
+    class-ID: 0400
+  Display: x11 server: X.Org v: 21.1.8 driver: X: loaded: amdgpu,modesetting
+    unloaded: radeon alternate: fbdev,vesa dri: radeonsi,iris gpu: amdgpu
+    display-ID: :0 screens: 1
+  Screen-1: 0 s-res: 1920x1080 s-dpi: 96 s-size: 508x285mm (20.00x11.22")
+    s-diag: 582mm (22.93")
+  Monitor-1: HDMI-A-4 mapped: HDMI-A-3 model: M601d-A3/A3R serial: 16843009
+    built: 2013 res: 1920x1080 dpi: 37 gamma: 1.2
+    size: 1329x747mm (52.32x29.41") diag: 1525mm (60") ratio: 16:9 modes:
+    max: 1920x1080 min: 720x400
+  API: OpenGL Message: Unable to show GL data. Required tool glxinfo
+    missing.
+Audio:
+  Device-1: Intel 100 Series/C230 Series Family HD Audio vendor: Gigabyte
+    driver: snd_hda_intel v: kernel bus-ID: 00:1f.3 chip-ID: 8086:a170
+    class-ID: 0403
+  Device-2: AMD Navi 21/23 HDMI/DP Audio driver: snd_hda_intel v: kernel
+    pcie: gen: 4 speed: 16 GT/s lanes: 16 bus-ID: 03:00.1 chip-ID: 1002:ab28
+    class-ID: 0403
+  Device-3: Conexant Systems CX23887/8 PCIe Broadcast Audio and Video
+    Decoder with 3D Comb vendor: Hauppauge works WinTV-quadHD driver: cx23885
+    v: 0.0.4 pcie: gen: 1 speed: 2.5 GT/s lanes: 1 bus-ID: 11:00.0
+    chip-ID: 14f1:8880 class-ID: 0400
+  Device-4: Conexant Systems CX23887/8 PCIe Broadcast Audio and Video
+    Decoder with 3D Comb vendor: Hauppauge works driver: cx23885 v: 0.0.4
+    pcie: gen: 1 speed: 2.5 GT/s lanes: 1 bus-ID: 12:00.0 chip-ID: 14f1:8880
+    class-ID: 0400
+  API: ALSA v: k6.1.1-1-MANJARO status: kernel-api with: aoss
+    type: oss-emulator tools: alsactl,alsamixer,amixer
+  Server-1: JACK v: 1.9.22 status: off tools: N/A
+  Server-2: PipeWire v: 0.3.70 status: off tools: pw-cli
+  Server-3: PulseAudio v: 16.1 status: active with: pulseaudio-alsa
+    type: plugin tools: pacat,pactl,pavucontrol
