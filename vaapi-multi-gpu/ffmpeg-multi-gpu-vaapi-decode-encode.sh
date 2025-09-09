@@ -26,10 +26,13 @@ input_audio_file=${SCRIPT_DIR}/demo.webm
 # Fix A/V sync by delaying video
 input_video_flags="-itsoffset 250ms"
 
+
+#    -c:v av1_vaapi -rc_mode CQP -qp 32 -global_quality 25 -profile:v:0 main \
+
 ffmpeg -report -nostdin ${DEBUG} \
   -threads ${num_cpus} -init_hw_device ${hw_device} \
   -init_hw_device ${vf_device} \
-  -extra_hw_frames 10 \
+  -extra_hw_frames 40 \
     -hwaccel vaapi -hwaccel_output_format nv12 -hwaccel_device ${hw_dev_name} \
     \
     $input_video_flags \
@@ -37,8 +40,8 @@ ffmpeg -report -nostdin ${DEBUG} \
     -i "$input_video_file" \
     -i "$input_audio_file" \
   -filter_hw_device ${vf_dev_name} \
-  -vf 'format=nv12|vaapi,hwupload' \
-    -c:v av1_vaapi -global_quality 25 -profile:v:0 main \
+  -vf 'format=nv12|vaapi,hwupload=extra_hw_frames=40' \
+    -c:v av1_vaapi -rc_mode QVBR -b:v 3M -q:v 51 -level 4.0 \
     -c:a copy \
     -map_metadata 0:g \
    -movflags +use_metadata_tags -y  "${input_video_file%.mp4}.av1.mkv"
